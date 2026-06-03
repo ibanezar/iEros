@@ -69,7 +69,7 @@ nav{
 /* ── HERO ── */
 .hero{
   height:100vh;min-height:600px;position:relative;overflow:hidden;
-  display:flex;align-items:flex-end;
+  display:flex;align-items:flex-start;
 }
 .hero-bg{
   position:absolute;inset:0;
@@ -79,11 +79,11 @@ nav{
 @keyframes hZoom{from{transform:scale(1.08)}to{transform:scale(1.0)}}
 .hero-overlay{
   position:absolute;inset:0;
-  background:linear-gradient(to top,rgba(14,14,14,.96) 0%,rgba(14,14,14,.55) 45%,rgba(14,14,14,.15) 100%);
+  background:linear-gradient(to bottom,rgba(14,14,14,.88) 0%,rgba(14,14,14,.25) 50%,rgba(14,14,14,.6) 100%);
 }
 .hero-content{
   position:relative;z-index:2;
-  padding:0 5vw 7vh;
+  padding:calc(68px + 3rem) 5vw 7vh;
   max-width:800px;
 }
 .hero-eyebrow{
@@ -211,7 +211,7 @@ footer{background:#080808;padding:3.5rem 5vw 2rem}
 @media(max-width:900px){
   nav{padding:.9rem 1.2rem}
 
-  .hero-content{padding:80px 1.4rem 6vh}
+  .hero-content{padding:calc(60px + 2rem) 1.4rem 5vh}
   .scroll-hint{display:none}
 
   .intro{grid-template-columns:1fr}
