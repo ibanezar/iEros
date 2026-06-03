@@ -28,7 +28,7 @@ nav{
   border-bottom:1px solid rgba(184,146,74,.15);
 }
 .nav-logo{display:flex;align-items:center;gap:.6rem;text-decoration:none}
-.nav-logo svg{width:28px;height:28px;flex-shrink:0}
+.nav-logo svg{width:38px;height:38px;flex-shrink:0}
 .nav-brand{font-family:var(--serif);font-size:1.4rem;font-weight:400;color:var(--gold);letter-spacing:.14em}
 .hamburger{
   display:flex;flex-direction:column;justify-content:center;gap:5px;
@@ -201,11 +201,14 @@ footer{background:#080808;padding:3.5rem 5vw 2rem}
 #lb-close{position:absolute;top:1.5rem;right:1.5rem;color:rgba(255,255,255,.6);font-size:2rem;cursor:pointer;background:none;border:none;line-height:1;transition:color .2s}
 #lb-close:hover{color:var(--gold)}
 
+/* ── SECTION SCROLL OFFSET ── */
+#products,#gallery,#contact{scroll-margin-top:70px}
+
 /* ── RESPONSIVE ── */
 @media(max-width:900px){
   nav{padding:.9rem 1.2rem}
 
-  .hero-content{padding:0 1.4rem 6vh}
+  .hero-content{padding:80px 1.4rem 6vh}
   .scroll-hint{display:none}
 
   .intro{grid-template-columns:1fr}
@@ -240,7 +243,7 @@ footer{background:#080808;padding:3.5rem 5vw 2rem}
 
 <nav id="nav">
   <a href="#" class="nav-logo">
-    <svg viewBox="0 0 28 28" fill="none"><path d="M14 3C14 3 20 9 20 15C20 21 17 25 14 25C11 25 8 21 8 15C8 9 14 3 14 3Z" stroke="#B8924A" stroke-width="1.2" fill="rgba(184,146,74,0.12)"/><path d="M14 10C14 10 17 13 17 16C17 19 15.5 21 14 21" stroke="#B8924A" stroke-width="1" opacity=".5" fill="none"/></svg>
+    <svg viewBox="0 0 28 28" fill="none"><path d="M14 3C14 3 20 9 20 15C20 21 17 25 14 25C11 25 8 21 8 15C8 9 14 3 14 3Z" stroke="#B8924A" stroke-width="1.8" fill="rgba(184,146,74,0.35)"/><path d="M14 10C14 10 17 13 17 16C17 19 15.5 21 14 21" stroke="#B8924A" stroke-width="1.4" opacity=".85" fill="none"/></svg>
     <span class="nav-brand">IEROS</span>
   </a>
   <button class="hamburger" id="hamburger" aria-label="Menu">
@@ -401,7 +404,7 @@ footer{background:#080808;padding:3.5rem 5vw 2rem}
 <footer>
   <div class="footer-top">
     <div class="footer-brand">
-      <svg width="22" height="22" viewBox="0 0 28 28" fill="none"><path d="M14 3C14 3 20 9 20 15C20 21 17 25 14 25C11 25 8 21 8 15C8 9 14 3 14 3Z" stroke="#B8924A" stroke-width="1.2" fill="rgba(184,146,74,0.12)"/></svg>
+      <svg width="22" height="22" viewBox="0 0 28 28" fill="none"><path d="M14 3C14 3 20 9 20 15C20 21 17 25 14 25C11 25 8 21 8 15C8 9 14 3 14 3Z" stroke="#B8924A" stroke-width="1.8" fill="rgba(184,146,74,0.35)"/></svg>
       <span class="brand-name">IEROS</span>
     </div>
     <nav class="footer-nav">
